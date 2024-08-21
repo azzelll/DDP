@@ -1,4 +1,4 @@
-ggiprint(">>====================================<<")
+print(">>====================================<<")
 print("||                                    ||")
 print("||  Welcome to Dek Depe's Calculator  ||")
 print("||                                    ||")
