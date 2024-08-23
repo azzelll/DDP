@@ -8,9 +8,9 @@ print("")
 
 
 nama = input("Nama: ")
-tanggalLahir = input("Tanggal lahir: ")
+tanggal_lahir = input("Tanggal lahir: ")
 jurusan = input("Jurusan: ")
-kelompokMentoring = int(input("Kelompok mentoring: "))
+kelompok_mentoring = int(input("Kelompok mentoring: "))
 motto = input("Motto: ")
 alas = int(input("Masukan alas (cm): "))
 tinggi = int(input("Masukan tinggi (cm): "))
@@ -21,8 +21,8 @@ miring = math.sqrt((math.pow(alas,2))+(math.pow(tinggi,2)))
 keliling = math.ceil(alas + tinggi + miring)
 
 print('Halo {} dari jurusan {}.'.format(nama, jurusan))
-print('{} berasal dari kelompok mentoring {}.'.format(nama, kelompokMentoring))
-print('{} lahir pada {} dengan motto "{}"'.format(nama, tanggalLahir, motto))
+print('{} berasal dari kelompok mentoring {}.'.format(nama, kelompok_mentoring))
+print('{} lahir pada {} dengan motto "{}"'.format(nama, tanggal_lahir, motto))
 print('Luas dari segitiga yang dimiliki {} adalah {} cm^2'.format(nama, luas))
 print('Keliling dari segitiga yang dimiliki {} adalah {} cm dengan sisi miring sepanjang {}'.format(nama, keliling, miring))
 
