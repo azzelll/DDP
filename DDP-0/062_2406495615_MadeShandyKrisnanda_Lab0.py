@@ -6,6 +6,7 @@ print("||                                    ||")
 print(">>====================================<<")
 print("")
 
+
 nama = input("Nama: ")
 tanggal_lahir = input("Tanggal lahir: ")
 jurusan = input("Jurusan: ")
@@ -25,3 +26,9 @@ print('{} lahir pada {} dengan motto "{}"'.format(nama, tanggal_lahir, motto))
 print('Luas dari segitiga yang dimiliki {} adalah {} cm^2'.format(nama, luas))
 print('Keliling dari segitiga yang dimiliki {} adalah {} cm dengan sisi miring sepanjang {}'.format(nama, keliling, miring))
 
+print("")
+print(">>==========================================<<")
+print("||                                          ||")
+print("||  Thanks for using Dek Depe's Calculator  ||")
+print("||                                          ||")
+print(">>==========================================<<")
