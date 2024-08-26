@@ -6,6 +6,14 @@ print(">>==========================<<")
 print("")
 
 jawaban_interogasi = input("Mulai Interogasi(Y/N)?")
+if jawaban_interogasi in ('n', 'N', 'no', 'No', 'NO'):
+    print('Interogasi telah selesai')
+    print('')
+    print('>>==========================<<')
+    print('||                     	    ||')
+    print('|| Ending the Interrogation ||')
+    print('||                     	    ||')
+    print('>>==========================<<')
 while jawaban_interogasi not in ('n', 'N', 'no', 'No', 'NO', 'y', 'Y', 'yes', 'Yes', 'YES'):
     print('')
     print('input tidak valid')
@@ -79,12 +87,16 @@ while jawaban_interogasi in ('y', 'Y', 'yes', 'Yes', 'YES'):
                 print('------------------------------')
                 print(' ')
                 continue
-            jawaban_interogasi = input("Lanjut interogasi (Y/N))?")
-            if jawaban_interogasi in ('y', 'Y', 'yes', 'Yes', 'YES'):
+            lanjut_interogasi = input("Lanjut interogasi (Y/N))?")
+            while lanjut_interogasi not in ('n', 'N', 'no', 'No', 'NO', 'y', 'Y', 'yes', 'Yes', 'YES'):
+                print('')
+                print('input tidak valid')
+                jawaban_interogasi = input("Lanjut interogasi (Y/N))?")
+            if lanjut_interogasi in ('y', 'Y', 'yes', 'Yes', 'YES'):
                 print('------------------------------')
                 print(' ')
                 continue
-            elif jawaban_interogasi in ('n', 'N', 'no', 'No', 'NO'):
+            elif lanjut_interogasi in ('n', 'N', 'no', 'No', 'NO'):
                 print('Interogasi telah selesai')
                 print('')
                 print('>>==========================<<')
@@ -92,7 +104,9 @@ while jawaban_interogasi in ('y', 'Y', 'yes', 'Yes', 'YES'):
                 print('|| Ending the Interrogation ||')
                 print('||                     	    ||')
                 print('>>==========================<<')
+                jawaban_interogasi = 'N'
                 break
             else:
+                print('')
                 print('input tidak valid')
                 continue
